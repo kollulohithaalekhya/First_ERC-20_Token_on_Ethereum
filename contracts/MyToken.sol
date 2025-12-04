@@ -121,7 +121,6 @@ contract MyToken {
         emit Approval(msg.sender, _spender, allowance[msg.sender][_spender]);
         return true;
     }
-
     // Optional helper 
     function getTokenInfo() external view returns (string memory, string memory, uint8, uint256) {
         return (name, symbol, decimals, totalSupply);
